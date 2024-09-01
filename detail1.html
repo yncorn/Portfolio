@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Yen Nhi Portfolio</title>
+    <link rel="stylesheet" href="style1.css" />
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- Move to up button -->
+    <div class="scroll-button">
+      <a href="#home"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <!-- navgaition menu -->
+    <nav>
+      <div class="navbar">
+        <div class="logo"><a href="#">Project</a></div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </ul>
+        <div class="media-icons">
+          <a href="https://github.com/stars/ngothuyyennhi/lists/my-contributed-repositories"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- Home Section Start -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <div class="text">
+          <div class="text-three">Movie Recommendation</div>
+          <div class="text-three">System</div>
+          <div class="text-one">Develop a system that provides</div>
+          <div class="text-one">personalized movie recommendations.</div>
+          <div class="text-two">Tools: Azure, Power Apps</div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="content">
+        <div class="title"><span>Content</span></div>
+        <div class="toc-details">
+          <ul>
+            <li><a href="#collection">Data Collection and Storage</a></li>
+            <li><a href="#preparation">Model Training & Deployment</a></li>
+            <li><a href="#ui">User Interaction</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Skill Section Start -->
+    <!-- Section Tag and Other Div will same where we need to put same CSS -->
+    <section class="skills" id="collection">
+      <div class="content">
+          <div class="title"><span>Data Collection and Storage</span></div>
+          <ul>
+              <li><strong>API Source:</strong> TMDB API for movie details, descriptions, genres, and user reviews.
+                  <ul>
+                      <li><strong>Number of User Rows:</strong> 1,999</li>
+                      <li><strong>Number of Movie Review Rows:</strong> 44,878</li>
+                      <li><strong>Number of Movie Rows:</strong> 547</li>
+                  </ul>
+              </li>
+              <li>Collected data stored in Azure Blob Storage.</li>
+              <li>Then, Azure Data Factory automates the data collection and storage process.</li>
+          </ul>
+      </div>
+  </section>
+  
+  <section class="about" id="preparation"> 
+    <div class="content">
+        <div class="title"><span>Data Preparation and Model Training</span></div>
+        <div class="about-details">
+            <div class="left">
+                <img src="images/azure1.png" alt="Azure Logo" />
+            </div>
+            <div class="right">
+                <div>
+                    <div class="topic">Data Preprocessing</div>
+                    <p>Use Azure Databricks to clean, transform, and integrate data.</p>
+                    <p>Preprocessed NoSQL data to SQL data for training.</p>
+                </div>
+                <div>
+                    <div class="topic">Model Training</div>
+                    <p>Utilize Azure Machine Learning for model training, then store the trained model in Azure Cosmos DB.</p>
+                    <p>Algorithms: ALS (Alternating Least Squares) and SVD (Surprise Singular Value Decomposition).</p>
+                </div>
+                <div>
+                    <div class="topic">Model Deployment</div>
+                    <p>Deployed on Azure Container Instances managed by Azure Kubernetes Service.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="skills" id="collection">
+  <div class="content">
+    <div class="skills-details">
+      <div class="text">
+          <div class="topic">Developed using Power Apps</div>
+          <p>Allows users to input movie ratings and receive recommendations from the deployed model.</p>
+      </div>
+          <div class="boxes">
+              <img src="Images/movie.png" alt="Monthly average profit of transactions of two purchasing methods">
+          </div>
+  </div>
+  </div>
+</section>
+  
+  <style>
+      /* CSS for the blank section */
+      .blank-section {
+          background-color: #F0F8FF;
+          height: 300px; /* Set height as per your requirement */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          color: #333;
+          font-size: 24px;
+      }
+  </style>
+    <!-- Footer Section Start -->
+    <footer>
+      <div class="text">
+        <div class="media-icons">
+          <a href="https://github.com/stars/ngothuyyennhi/lists/my-contributed-repositories"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
